@@ -53,7 +53,7 @@ vector<string> readWordListFromFile(const string &filePath)
 bool isCharInWord(const char ch, const string &word)
 {
     // TODO: return true if ch is in word else return false
-    return word.find(ch) != word.length();
+    return word.find(ch) != std::string::npos;
 }
 
 /***
